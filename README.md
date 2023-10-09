@@ -47,19 +47,25 @@ To update your theme to future versions:
 git submodule update --remote --merge
 ```
 
-## Installing dependencies 
+## Running
 
-Copy (at least) the following files from the themes exampleSite to the root folder of your project.
-
-- themes/dot-org-hugo-theme/exampleSite/package.json
-- themes/dot-org-hugo-theme/exampleSite/postcss.config.js
-
-For ease you can run from the command line:
+You can run a local server using:
 
 ```bash
-cp themes/dot-org-hugo-theme/exampleSite/package.json .
-cp themes/dot-org-hugo-theme/exampleSite/postcss.config.js .
+hugo server
 ```
+
+or you can build your site using:
+
+```bash
+hugo
+```
+
+## Config files
+
+See /exampleSite/config/ for example configuration files.
+
+You should copy these across or merge them with your existing config.
 
 We recommend a config directory approach to replace your config.toml or hugo.toml file. To get up and running quickly with the default config, you can copy the following folder to the root of your site:
 
@@ -70,30 +76,6 @@ From the command line in your project root, you can run the following to copy th
 ```bash
 cp -r themes/dot-org-hugo-theme/exampleSite/config ./config
 ```
-
-After that, run this command to install dependencies (requires [node.js](https://nodejs.org/)).
-
-```bash
-npm install
-```
-
-You can then run a local server using:
-
-```bash
-npm run start
-```
-
-or you can build your site using:
-
-```bash
-npm run build
-```
-
-## Config files
-
-See /exampleSite/config/ for example configuration files.
-
-You should copy these across or merge them with your existing config.
 
 ## Custom front matter
 
